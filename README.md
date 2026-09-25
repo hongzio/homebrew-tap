@@ -24,3 +24,15 @@ The repository is named `homebrew-tap` because `brew tap hongzio/tap` expands to
 brew install --HEAD imswitch
 brew services start imswitch
 ```
+
+## Casks
+
+| cask | what it is |
+|---|---|
+| [`kbd`](https://github.com/hongzio/kbd) | Korean input method for developers — instant Hangul/roman toggle, shortcuts pass through as ABC keys, socket IPC |
+
+```sh
+brew install --cask kbd
+```
+
+Then add kbd in System Settings → Keyboard → Input Sources (log out and back in if it isn't listed).
