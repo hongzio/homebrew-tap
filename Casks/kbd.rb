@@ -1,6 +1,6 @@
 cask "kbd" do
-  version "0.1.0"
-  sha256 "ca8d2bfe47daf59e1d7eb22d2b0ad1a9687665b235281f2ede7d5e2b86660d8c"
+  version "0.1.1"
+  sha256 "73cfad6b6f60c2c06e1e990c430c53f75c97d40da2254386334f2a62ab0a0536"
 
   url "https://github.com/hongzio/kbd/releases/download/v#{version}/kbd-#{version}.zip"
   name "kbd"
