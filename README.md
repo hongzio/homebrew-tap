@@ -30,9 +30,12 @@ brew services start imswitch
 | cask | what it is |
 |---|---|
 | [`kbd`](https://github.com/hongzio/kbd) | Korean input method for developers — instant Hangul/roman toggle, shortcuts pass through as ABC keys, socket IPC |
+| [`foxcycle`](https://github.com/hongzio/foxcycle) | Cycles ⌘\` through the windows of every Firefox profile in one fixed order |
 
 ```sh
 brew install --cask kbd
+brew install --cask foxcycle
 ```
 
 Then add kbd in System Settings → Keyboard → Input Sources (log out and back in if it isn't listed).
+FoxCycle asks for Accessibility access on first launch.
