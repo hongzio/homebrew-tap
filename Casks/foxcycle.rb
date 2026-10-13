@@ -1,6 +1,6 @@
 cask "foxcycle" do
   version "0.1.0"
-  sha256 "456ffc2ff3eee0f0f1278c15553083f0729a19f184ba154c75601542767cf577"
+  sha256 "b749929f88ef9e46edc68212e1e5ab40b8d6da9cb0e5f501d05f30aa303dfe5d"
 
   url "https://github.com/hongzio/foxcycle/releases/download/v#{version}/FoxCycle-#{version}.zip"
   name "FoxCycle"
@@ -16,11 +16,6 @@ cask "foxcycle" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/FoxCycle.app"]
   end
 
-  postflight_steps do
-    # An upgrade quits the running copy (see uninstall) and there is no login item: start it again.
-    run "/usr/bin/open", args: ["{{appdir}}/FoxCycle.app"], must_succeed: false
-  end
-
   # Also runs on upgrade. Matches installed copies only, not a development build elsewhere.
   uninstall script: {
     executable:   "/usr/bin/pkill",
@@ -31,8 +26,10 @@ cask "foxcycle" do
   zap trash: "~/Library/Preferences/com.hongzio.foxcycle.plist"
 
   caveats <<~EOS
-    FoxCycle needs Accessibility access. Allow it when asked, or in
+    Start FoxCycle after installing or upgrading:
+      open -a FoxCycle
+    It needs Accessibility access: allow it when asked, or in
     System Settings > Privacy & Security > Accessibility.
-    It does not start at login: add it in System Settings > General > Login Items.
+    To start it at login, turn on Start at Login in its menu bar menu.
   EOS
 end
