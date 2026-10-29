@@ -19,10 +19,12 @@ The repository is named `homebrew-tap` because `brew tap hongzio/tap` expands to
 | formula | what it is |
 |---|---|
 | [`imswitch`](https://github.com/hongzio/imswitch) | Forces the macOS input source from Neovim — locally, over SSH, or from a container |
+| [`gero`](https://github.com/hongzio/gero) | Runs Claude Code and Codex agents inside Apple `container` isolations (Apple silicon) |
 
 ```sh
 brew install --HEAD imswitch
 brew services start imswitch
+brew install gero
 ```
 
 ## Casks
