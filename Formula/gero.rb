@@ -1,10 +1,10 @@
 class Gero < Formula
   desc "Run Claude Code and Codex agents inside Apple container isolations"
   homepage "https://github.com/hongzio/gero"
-  url "https://github.com/hongzio/gero/releases/download/v0.4.1/gero-0.4.1-darwin-arm64.tar.gz"
+  url "https://github.com/hongzio/gero/releases/download/v0.5.0/gero-0.5.0-darwin-arm64.tar.gz"
   # Said outright: from the file name Homebrew would read the "64" of arm64.
-  version "0.4.1"
-  sha256 "27edef8682cc8230710795365636fa706af147eaccc10a0f2565313144037065"
+  version "0.5.0"
+  sha256 "952d6fe705b9d10d4c980746336e41644f457640fc5b240bf921e7247a95b390"
 
   # The release's own binary (scripts/release.sh), so no Go toolchain here:
   # pure Go, with the linux shim it puts in the isolations embedded. The
@@ -25,7 +25,8 @@ class Gero < Formula
 
       Once, for the network fence that keeps isolations off the Mac and the LAN:
         sudo gero pf install
-      The fence helper is a copy of gero: run that again after an upgrade.
+      The fence helper is a copy of gero. After an upgrade, run that again only
+      if gero says to (`gero iso ls`, `gero pf status`).
 
       Before `brew uninstall gero`:
         gero daemon uninstall
