@@ -1,10 +1,10 @@
 class Gero < Formula
   desc "Run Claude Code and Codex agents inside Apple container isolations"
   homepage "https://github.com/hongzio/gero"
-  url "https://github.com/hongzio/gero/releases/download/v0.5.0/gero-0.5.0-darwin-arm64.tar.gz"
+  url "https://github.com/hongzio/gero/releases/download/v0.6.0/gero-0.6.0-darwin-arm64.tar.gz"
   # Said outright: from the file name Homebrew would read the "64" of arm64.
-  version "0.5.0"
-  sha256 "952d6fe705b9d10d4c980746336e41644f457640fc5b240bf921e7247a95b390"
+  version "0.6.0"
+  sha256 "898caadd8ed1c1fa1956dffd158003f51bcee0e6adf4c8b7dbe4a70e12a2716b"
 
   # The release's own binary (scripts/release.sh), so no Go toolchain here:
   # pure Go, with the linux shim it puts in the isolations embedded. The
