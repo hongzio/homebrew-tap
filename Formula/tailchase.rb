@@ -1,7 +1,10 @@
 class Tailchase < Formula
   desc "Manage tailcat aliases, keys, and persistent connections"
   homepage "https://github.com/hongzio/tailchase"
-  head "https://github.com/hongzio/tailchase.git", branch: "main"
+  url "https://github.com/hongzio/tailchase.git",
+      tag: "v0.1.0",
+      revision: "478c8b445a36bfc68031d0d5ea7e2b3e2e4582d5"
+  version "0.1.0"
 
   depends_on "go" => :build
   depends_on "tailcat"
