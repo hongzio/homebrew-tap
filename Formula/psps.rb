@@ -1,10 +1,10 @@
 class Psps < Formula
   desc "Run Claude Code and Codex agents inside Apple container isolations"
   homepage "https://github.com/hongzio/psps"
-  url "https://github.com/hongzio/psps/releases/download/v0.7.0/psps-0.7.0-darwin-arm64.tar.gz"
+  url "https://github.com/hongzio/psps/releases/download/v0.8.0/psps-0.8.0-darwin-arm64.tar.gz"
   # Said outright: from the file name Homebrew would read the "64" of arm64.
-  version "0.7.0"
-  sha256 "a5216cd5e40b91f22d15e98226eea8f951367480d7feca89622651cac2b3fd16"
+  version "0.8.0"
+  sha256 "3c667c0fbac1782f8266142da8eb2dc0b4d5980006979117725c66fcbb8c4232"
 
   # The release's own binary (scripts/release.sh), so no Go toolchain here:
   # pure Go, with the linux shim it puts in the isolations embedded. The
